@@ -1,1 +1,7 @@
-// document.getElementById("proba").innerHTML = "nowy";
+window.onload = () => {
+  "use strict";
+
+  if ("serviceWorker" in navigator) {
+    navigator.serviceWorker.register("./sw.js");
+  }
+};

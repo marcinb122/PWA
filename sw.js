@@ -2,7 +2,7 @@ const cacheName = "podyplomowe";
 const filesToCache = ["./", "./index.html", "./css/stle.css", "./js/main.js"];
 
 self.addEventListener("install", function (event) {
-  event.waitUnit(
+  event.waitUntil(
     casches.open(cacheName).then(function (cache) {
       return cache.addAll(filesToCache);
     })
